@@ -3,9 +3,20 @@ import Head from "next/head";
 import Image from "next/image";
 import Card from "../components/card";
 import Product from "../components/product";
+import { useEffect, useState } from "react";
+import { IProduct } from "../models/product";
 
 export default function Home() {
-  const products = ["T-Shirt", "Jacket", "Hat"];
+
+  const [products, setProducts] = useState<IProduct[]>([]);
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const res = await (await fetch(`api/products`)).json();
+      setProducts(res);
+    };
+    fetchProducts();
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
       <Head>
@@ -34,9 +45,9 @@ export default function Home() {
   
         </p>
 
-        <div className="mt-10 flex flex-wrap flex-col sm:flex-row w-full sm:max-w-3xl justify-center items-center">
-        {products.map((p,i) => (
-          <Product id={i + 1} key={p} name={p} category={1} cost={10} image={i % 4} />
+        <div className="mt-10 flex flex-wrap flex-col sm:flex-row w-full justify-center items-center">
+        {products.map((p) => (
+  <Product key={p.id} {...p} />
 ))}
        
         </div>
