@@ -1,8 +1,11 @@
+import classNames from "classnames";
 import Head from "next/head";
 import Image from "next/image";
 import Card from "../components/card";
+import Product from "../components/product";
 
 export default function Home() {
+  const products = ["T-Shirt", "Jacket", "Hat"];
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
       <Head>
@@ -15,56 +18,31 @@ export default function Home() {
         />
       </Head>
 
-      <header  className="h-16 px-8 bg-blue-600 text-white w-full sticky top-0 flex items-center justify-between">
-      HEADER
-	<span>
-    <div className="h-10 w-10 bg-white rounded-full flex items-center justify-center text-blue-600">
-  <span className="material-icons">face</span>
-</div> </span>
-
-</header>
-
       <main className="py-20 flex flex-col flex-1 justify-center items-center">
         <h1 className="m-10 leading-snug text-6xl text-center">
-          Welcome to{" "}
+          
           <a
             className="text-blue-600 no-underline hover:underline focus:underline"
             href="https://nextjs.org"
           >
-            Next.js!
+            
           </a>
         </h1>
 
         <p className="leading-normal text-2xl text-center">
-          Get started by editing{" "}
-          <code className="bg-gray-100 rounded-md p-3 text-lg font-mono">
-            pages/index.js
-          </code>
+         Web Project 
+  
         </p>
 
         <div className="mt-10 flex flex-wrap flex-col sm:flex-row w-full sm:max-w-3xl justify-center items-center">
-          <Card
-            href="https://nextjs.org/docs"
-            header="Documentation"
-            content="Find in-depth information about Next.js features and API"
-          />
-          <Card
-            href="https://nextjs.org/learn"
-            header="Learn"
-            content="Learn about Next.js in an interactive course with quizzes!"
-          />
-          <Card
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            header="Examples"
-            content="Discover and deploy boilerplate example Next.js projects."
-          />
-          <Card
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            header="Deploy"
-            content="Instantly deploy your Next.js site to a public URL with Vercel."
-          />
+        {products.map((p,i) => (
+          <Product id={i + 1} key={p} name={p} category={1} cost={10} image={i % 4} />
+))}
+       
         </div>
+      
       </main>
+  
 
       <footer className="w-full h-24 flex justify-center items-center border-t border-solid border-gray-200">
         <a
