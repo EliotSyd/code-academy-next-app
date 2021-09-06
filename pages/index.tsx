@@ -15,8 +15,17 @@ export default function Home() {
         />
       </Head>
 
+      <header  className="h-16 px-8 bg-blue-600 text-white w-full sticky top-0 flex items-center justify-between">
+      HEADER
+	<span>
+    <div className="h-10 w-10 bg-white rounded-full flex items-center justify-center text-blue-600">
+  <span className="material-icons">face</span>
+</div> </span>
+
+</header>
+
       <main className="py-20 flex flex-col flex-1 justify-center items-center">
-        <h1 className="m-0 leading-snug text-6xl text-center">
+        <h1 className="m-10 leading-snug text-6xl text-center">
           Welcome to{" "}
           <a
             className="text-blue-600 no-underline hover:underline focus:underline"
