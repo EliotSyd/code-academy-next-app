@@ -41,7 +41,7 @@ export default function Home() {
         </h1>
 
         <p className="leading-normal text-2xl text-center">
-         Web Project 
+         Sidetrade Products 
   
         </p>
 
