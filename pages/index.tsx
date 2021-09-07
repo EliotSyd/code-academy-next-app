@@ -40,12 +40,12 @@ export default function Home() {
           </a>
         </h1>
 
-        <p className="leading-normal text-2xl text-center text-indigo-600 font-bold">
+        <p className="leading-normal text-2xl text-center text-blue-500 font-bold">
          Sidetrade Products 
   
         </p>
 
-        <div className= "mt-10 flex flex-wrap flex-col sm:flex-row w-full justify-center items-center">
+        <div className= "mt-10 flex flex-wrap flex-col sm:flex-row w-full justify-center items-center text-blue-400">
         {products.map((p) => (
   <Product key={p.id} {...p} />
 ))}
