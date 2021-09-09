@@ -16,20 +16,15 @@ export default function ProductDetail() {
     fetchProducts();
   }, []);
 
-  return (
-    <main className="px-10 py-6 flex flex-col flex-1">
-      <Product {...product} />
-    </main>
-
-if (product == undefined  || product == null) {
-  return ( <main className="px-10 py-6 flex flex-col flex-1">
+  if (product == undefined  || product == null) {
+    return ( <main className="px-10 py-6 flex flex-col flex-1">
+    <h1> item is not here </h1>  
+    </main>)
+  } else { 
+    return (
+       <main className="px-10 py-6 flex flex-col flex-1">
   <Product {...product} />
   </main>)
-} else { 
-  return (
-     <main className="px-10 py-6 flex flex-col flex-1">
-<Product {...product} />
-</main>)
- }
+   }
   };
   
