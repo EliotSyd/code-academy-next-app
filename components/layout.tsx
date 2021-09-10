@@ -1,6 +1,5 @@
 import Header from "./header";
 import Sidebar from "./sidebar";
-import Footer from "./footer";
 
 const Layout: React.FC = ({ children }) => {
   return (
@@ -15,7 +14,7 @@ const Layout: React.FC = ({ children }) => {
           
         </div>
       
-      <Footer />
+      <footer/>
     </div>
 
    

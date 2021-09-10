@@ -1,7 +1,7 @@
 const Sidebar: React.FC = () => {
     return (
-            <div className="py-4 px-4 space-y-2 space-x-2 max-h-screen w-60 bg-blue-600 text-blue-100 flex flex-col">
-                <div className="flex py-2 px-6 space-x-3 text-black bg-gradient-to-r from-red-400 to-red-700">
+            <div className="py-4 px-4 space-y-2 space-x-2 max-h-screen w-60 bg-gradient-to-r from-blue-800 to-blue-300 text-blue-100 flex flex-col">
+                <div className="flex py-2 px-6 space-x-3 text-black bg-blue-200">
                     <a className="material-icons">navigation</a>
                     <a >Navigation:</a>
                 </div>

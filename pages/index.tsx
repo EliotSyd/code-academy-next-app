@@ -40,8 +40,8 @@ export default function Home() {
           </a>
         </h1>
 
-        <p className="leading-normal text-2xl text-center text-blue-500 font-bold">
-         Sidetrade Products 
+        <p className="leading-normal text-6xl text-center text-yellow-500 font-italic">
+         Next.js
   
         </p>
 
