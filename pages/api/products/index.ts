@@ -1,6 +1,7 @@
 
 import type { NextApiRequest, NextApiResponse } from "next";
 import { IProduct } from "../../../models/product";
+import { getDB } from "../../../db/init-db";
 
 export const products = Array(100)
   .fill(0)
@@ -15,9 +16,12 @@ export const products = Array(100)
     };
   });
 
-export default function handler(
+export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<IProduct[]>
 ) {
+  const { db } = getDB();
+  const result = await db.query('SELECT * FROM CodeAcademySchema.customer LIMIT 1');
+  console.log(result);
   res.status(200).json(products);
 }
