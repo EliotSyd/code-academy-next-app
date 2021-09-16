@@ -2,9 +2,11 @@ import classNames from "classnames";
 import Head from "next/head";
 import Image from "next/image";
 import Card from "../components/card";
+import NavBar from "../components/NavBar";
 import Product from "../components/product";
 import { useEffect, useState } from "react";
 import { IProduct } from "../models/product";
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -13,7 +15,18 @@ export default function Home() {
     const fetchProducts = async () => {
       const res = await (await fetch(`api/products`)).json();
       setProducts(res);
-    };
+
+      return (
+        <div>
+          <NavBar />
+          <h1>Homepage</h1>
+          <p>Additional info</p>
+          <Link href="/Contact">
+            <a>Contact</a>
+          </Link>
+        </div>
+      )
+    }
     fetchProducts();
   }, []);
 
@@ -31,29 +44,29 @@ export default function Home() {
 
       <main className="py-20 flex flex-col flex-1 justify-center items-center">
         <h1 className="m-10 leading-snug text-6xl text-center">
-          
+
           <a
             className="text-blue-600 no-underline hover:underline focus:underline"
             href="https://nextjs.org"
           >
-            
+
           </a>
         </h1>
 
         <p className="leading-normal text-6xl text-center text-yellow-500 font-italic">
-         Next.js
-  
+          Next.js
+
         </p>
 
-        <div className= "mt-10 flex flex-wrap flex-col sm:flex-row w-full justify-center items-center text-blue-400">
-        {products.map((p) => (
-  <Product key={p.id} {...p} />
-))}
-       
+        <div className="mt-10 flex flex-wrap flex-col sm:flex-row w-full justify-center items-center text-blue-400">
+          {products.map((p) => (
+            <Product key={p.id} {...p} />
+          ))}
+
         </div>
-      
+
       </main>
-  
+
 
       <footer className="w-full h-24 flex justify-center items-center border-t border-solid border-gray-200">
         <a
