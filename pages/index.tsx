@@ -6,7 +6,6 @@ import NavBar from "../components/NavBar";
 import Product from "../components/product";
 import { useEffect, useState } from "react";
 import { IProduct } from "../models/product";
-import Link from 'next/link';
 
 export default function Home() {
 
@@ -15,18 +14,7 @@ export default function Home() {
     const fetchProducts = async () => {
       const res = await (await fetch(`api/products`)).json();
       setProducts(res);
-
-      return (
-        <div>
-          <NavBar />
-          <h1>Homepage</h1>
-          <p>Additional info</p>
-          <Link href="/Contact">
-            <a>Contact</a>
-          </Link>
-        </div>
-      )
-    }
+    };
     fetchProducts();
   }, []);
 
