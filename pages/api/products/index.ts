@@ -21,7 +21,7 @@ export default async function handler(
   res: NextApiResponse<IProduct[]>
 ) {
   const { db } = getDB();
-  const result = await db.query('SELECT * FROM CodeAcademySchema.customer LIMIT 1');
+  const result = await db.query('SELECT * FROM CodeAcademySchema.product');
   console.log(result);
-  res.status(200).json(products);
+  res.status(200).json(result);
 }
