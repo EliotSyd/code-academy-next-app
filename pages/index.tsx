@@ -2,7 +2,6 @@ import classNames from "classnames";
 import Head from "next/head";
 import Image from "next/image";
 import Card from "../components/card";
-import NavBar from "../components/NavBar";
 import Product from "../components/product";
 import { useEffect, useState } from "react";
 import { IProduct } from "../models/product";
