@@ -5,7 +5,6 @@ import Card from "../components/card";
 import Product from "../components/product";
 import { useEffect, useState } from "react";
 import { IProduct } from "../models/product";
-import 'bootstrap/dist/css/bootstrap.css';
 
 export default function Home() {
 
