@@ -5,6 +5,7 @@ import Card from "../components/card";
 import Product from "../components/product";
 import { useEffect, useState } from "react";
 import { IProduct } from "../models/product";
+import Link from 'next/link';
 
 export default function Home() {
 
