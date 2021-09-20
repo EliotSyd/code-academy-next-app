@@ -47,7 +47,7 @@ export default function Home() {
 
         <div className="mt-10 flex flex-wrap flex-col sm:flex-row w-full justify-center items-center text-blue-400">
           {products.map((p) => (
-            <Product key={p.id} {...p} />
+            <Product key={p.product_id} {...p} />
           ))}
 
         </div>
