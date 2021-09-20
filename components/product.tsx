@@ -9,7 +9,7 @@ const Product: React.FC<IProduct> = ({ product_id, product_name, selling_price, 
       <a className="m-3 w-96 text-left no-underline border border-solid border-gray-200 rounded-lg hover:shadow-md focus:shadow-md focus:outline-none">
         <div className="p-5">
           <Image
-            src={"Image"}
+            src={product_image}
             width={500}
             height={500}
           />
