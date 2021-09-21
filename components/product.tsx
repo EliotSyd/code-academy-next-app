@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { IProduct } from "../models/product";
-import Link from "next/link";
+import Link from "next/Link";
 import Image from "next/image";
 
 const Product: React.FC<IProduct> = ({ product_id, product_name, selling_price, product_image }) => {
