@@ -1,11 +1,11 @@
 import Header from "./header";
+import Navbar from "./Navbar";
 import Sidebar from "./sidebar";
 
 const Layout: React.FC = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col">
-
-      <Header />
+      <Navbar />
       <div className="flex">
         <div className="flex">
           <Sidebar />

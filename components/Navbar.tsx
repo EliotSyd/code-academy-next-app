@@ -12,7 +12,7 @@ export const Navbar = () => {
     <>
       <nav className='flex items-center flex-wrap bg-green-400 p-3 navbar navbar-expand-lg navbar-light bg-light'>
         <div className="container-fluid"></div>
-        <Link href="/"><a>Home</a></Link>
+        <Link href="/"><a>index.tsx</a></Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
         <span className="navbar-toggler-icon"></span>
         <a className='inline-flex items-center p-2 mr-4 '>
@@ -52,7 +52,7 @@ export const Navbar = () => {
             }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
         >
           <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
-            <Link href="/"><a>about</a></Link>
+            <Link href="/"><a></a></Link>
             <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white '>
               About
             </a>
