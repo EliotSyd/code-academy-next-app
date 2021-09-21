@@ -24,7 +24,7 @@ export default function ProductDetail() {
     return (
        <main className="px-10 py-6 flex flex-col flex-1">
 
-         {products.map((p) => (
+         {product.map((p) => (
            <product key={p.product_id} {...p} />
          ))}
   
