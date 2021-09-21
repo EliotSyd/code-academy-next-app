@@ -7,7 +7,7 @@ export default function ProductDetail() {
   const router = useRouter();
   const { id } = router.query;
 
-  const [product, setProduct] = useState<IProduct | undefined>();
+  const [product, setProduct] = useState<IProduct[] | undefined>();
   useEffect(() => {
     const fetchProducts = async () => {
       const res = await (await fetch(`api/products/${id}`)).json();
@@ -23,7 +23,11 @@ export default function ProductDetail() {
   } else { 
     return (
        <main className="px-10 py-6 flex flex-col flex-1">
-  <Product {...product} />
+
+         {products.map((p) => (
+           <product key={p.product_id} {...p} />
+         ))}
+  
   </main>)
    }
   };
