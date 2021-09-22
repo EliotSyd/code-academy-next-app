@@ -1,7 +1,12 @@
 import Head from "next/head";
-import Layout from "../components/layout";
+import Navbar from "../components/Navbar";
 
 export default function About() {
-    return <h1>About us</h1>
+    return ( <h1>
+        className;
+        About us
+        </h1>
+
+    )
 }
 

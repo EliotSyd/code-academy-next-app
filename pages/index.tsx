@@ -40,8 +40,9 @@ export default function Home() {
           </a>
         </h1>
 
-        <p className="leading-normal text-6xl text-center text-yellow-500 font-italic">
-          Next.js
+        <p className="leading-normal text-6xl text-center font-italic 
+        text-shadow: 2px 2px 5px red">
+         Products 
 
         </p>
 

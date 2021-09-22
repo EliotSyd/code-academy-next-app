@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Layout from "../components/layout";
+import Navbar from "../components/Navbar";
+
 export default function Contact() {
     return <h1>Contact</h1>
 }
