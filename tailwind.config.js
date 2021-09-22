@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       width: {
         "45/100": "45%",
+        backgroundImage: {
+          'background-image': "url('/public/bg.jpeg')",
+        }
       }
     },
   },

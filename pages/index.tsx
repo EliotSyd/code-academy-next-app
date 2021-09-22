@@ -30,18 +30,14 @@ export default function Home() {
       </Head>
 
       <main className="py-20 flex flex-col flex-1 justify-center items-center">
+
         <h1 className="m-10 leading-snug text-6xl text-center">
-
-          <a
-            className="text-blue-600 no-underline hover:underline focus:underline"
-            href="https://nextjs.org"
-          >
-
+          <a className="text-blue-600 no-underline hover:underline focus:underline"
+            href="https://nextjs.org" >
           </a>
         </h1>
-
         <p className="leading-normal text-6xl text-center font-italic 
-        text-shadow: 2px 2px 5px red">
+        text-">
          All Products 
 
         </p>
