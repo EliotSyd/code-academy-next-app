@@ -42,7 +42,7 @@ export default function Home() {
 
         <p className="leading-normal text-6xl text-center font-italic 
         text-shadow: 2px 2px 5px red">
-         Products 
+         All Products 
 
         </p>
 
