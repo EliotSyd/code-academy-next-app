@@ -5,5 +5,6 @@ export interface IProduct {
 	product_name: string;
 	selling_price: number;
 	product_image: string;
+	category: string;
 }
 

@@ -3,81 +3,44 @@ const Sidebar: React.FC = () => {
         <div className="py-4 px-4 space-y-2 space-x-2 max-h-screen w-60 bg-blue-500 text-blue-100 flex flex-col">
             <div className="flex py-2 px-6 space-x-3 text-white font-bold bg-blue-400">
                 <a className="material-icons">navigation</a>
-                <a >Products:</a>
+                <a >Categories:</a>
             </div>
 
             <div className="flex">
-                <a href="#" className="flex space-x-3 py-2 px-3 rounded transition duration-200 hover:bg-blue-800 hover:text-white">
+                <a href="./footwear" className="flex space-x-3 py-2 px-3 rounded transition duration-200 hover:bg-blue-800 hover:text-white">
                     <div className="material-icons">house</div>
-                    <div className="">Category 1</div>
+                    <div className="">Footwear</div>
                 </a>
             </div>
 
             <div className="flex">
-                <a href="#" className="flex space-x-3 py-2 px-3 rounded transition duration-200 hover:bg-blue-800 hover:text-white">
+                <a href="./clothing" className="flex space-x-3 py-2 px-3 rounded transition duration-200 hover:bg-blue-800 hover:text-white">
                     <div className="material-icons">directions_car</div>
-                    <div className="">Category 2</div>
+                    <div className="">Clothing</div>
                 </a>
             </div>
 
             <div className="flex">
-                <a href="#" className="flex space-x-3 py-2 px-3 rounded transition duration-200 hover:bg-blue-800 hover:text-white">
+                <a href="./tech stuff" className="flex space-x-3 py-2 px-3 rounded transition duration-200 hover:bg-blue-800 hover:text-white">
                     <div className="material-icons">battery_full</div>
-                    <div className="">Category 3</div>
+                    <div className="">Tech Stuff</div>
                 </a>
             </div>
 
             <div className="flex">
-                <a href="#" className="flex space-x-3 py-2 px-3 rounded transition duration-200 hover:bg-blue-800 hover:text-white">
+                <a href="./phone acessories" className="flex space-x-3 py-2 px-3 rounded transition duration-200 hover:bg-blue-800 hover:text-white">
                     <div className="material-icons">call_end</div>
-                    <div className="">Category 4</div>
+                    <div className="">Phone Acessories</div>
                 </a>
             </div>
 
             <div className="flex">
-                <a href="#" className="flex space-x-3 py-2 px-3 rounded transition duration-200 hover:bg-blue-800 hover:text-white">
+                <a href="./tv stuff" className="flex space-x-3 py-2 px-3 rounded transition duration-200 hover:bg-blue-800 hover:text-white">
                     <div className="material-icons">camera_alt</div>
-                    <div className="">Category 5</div>
+                    <div className="">TV Stuff</div>
                 </a>
             </div>
-
-            <div className="flex">
-                <a href="#" className="flex space-x-3 py-2 px-3 rounded transition duration-200 hover:bg-blue-800 hover:text-white">
-                    <div className="material-icons">house</div>
-                    <div className="">Category 6</div>
-                </a>
-            </div>
-
-            <div className="flex">
-                <a href="#" className="flex space-x-3 py-2 px-3 rounded transition duration-200 hover:bg-blue-800 hover:text-white">
-                    <div className="material-icons">house</div>
-                    <div className="">Category 7</div>
-                </a>
-            </div>
-
-            <div className="flex">
-                <a href="#" className="flex space-x-3 py-2 px-3 rounded transition duration-200 hover:bg-blue-800 hover:text-white">
-                    <div className="material-icons">house</div>
-                    <div className="">Category 8</div>
-                </a>
-            </div>
-
-            <div className="flex">
-                <a href="#" className="flex space-x-3 py-2 px-3 rounded transition duration-200 hover:bg-blue-800 hover:text-white">
-                    <div className="material-icons">house</div>
-                    <div className="">Category 9</div>
-                </a>
-            </div>
-
-            <div className="flex">
-                <a href="#" className="flex space-x-3 py-2 px-3 rounded transition duration-200 hover:bg-blue-800 hover:text-white">
-                    <div className="material-icons">house</div>
-                    <div className="">Category 10</div>
-                </a>
-            </div>
-
-        </div>
-
+</div>
     );
 };
 
