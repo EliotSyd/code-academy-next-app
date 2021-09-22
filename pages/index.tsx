@@ -37,7 +37,7 @@ export default function Home() {
           </a>
         </h1>
 
-        <span className="decoration-clone h-11 w-60 bg-gradient-to-b from-blue-400 to-green-500 text-white text-center font-bold text-4xl ...">
+        <span className="decoration-clone h-11 w-60 bg-gradient-to-b from-blue-600 to-blue-300 text-white text-center font-bold text-4xl ...">
   All Products 
 </span>
 
