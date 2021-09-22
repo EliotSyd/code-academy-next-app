@@ -6,7 +6,7 @@ export default function Home() {
     const [products, setProducts] = useState<IProduct[]>([]);
     useEffect(() => {
         const fetchProducts = async () => {
-            const res = await (await fetch(`api/products/category/tv stuff`)).json();
+            const res = await (await fetch(`api/products/category/tvstuff`)).json();
             setProducts(res);
         };
         fetchProducts();
