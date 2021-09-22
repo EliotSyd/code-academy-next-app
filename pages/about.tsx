@@ -17,19 +17,27 @@ export default function About() {
         <main className="py-20 flex flex-col flex-1 justify-center items-center">
         <h1 className="m-10 leading-snug text-6xl text-center">
 
-          <a
-            className="text-blue-600 no-underline hover:underline focus:underline"
-            href="https://nextjs.org"
-          >
-
-          </a>
-        </h1>
-
-        <p className="leading-normal text-6xl text-center font-italic 
-        ">
+<a className="leading-normal text-6xl font-italic align-content-centre align-text-top">
          About us 
-
+        </a>
+        </h1>
+        <p className="text-center text-gray-700 decoration-clone h-60 w-100 bg-gradient-to-b from-blue-100 to-blue-600">
+            Welcome to our about us page! Sidetrade Products started in 2000 with a consistent growth through to this day.  This website
+            specialises in displaying some of our wide variety of great products which are available for you today!  This text is just an
+            example for the content within this about us page.  This following text is coppied from the Sidetrade website. Finance and Sales
+            teams working with Aimie, Sidetrade’s advanced AI-driven Order-to-Cash technology, are yielding the best performance in retention, 
+            upsell/cross-sell, and cash collection.  Fueled by an unrivalled database of B2B customer payment experiences, Aimie automatically
+            provides predictive customer analytics. She delivers actionable insights that enable teams to make data-driven decisions they can trust.
+            Aimie also provides automation to get better results than purely manual or ERP-based solutions. She deals with repetitive, time-consuming 
+            tasks, so that her human co-workers can concentrate on their core business: increasing customer value and bringing in cash.  Aimie 
+            is a valued teammate in collaborative intelligence, i.e. Artificial Intelligence supporting natural intelligence to let teams work faster and smarter.
         </p>
+
+
+
+
+
+
         </main>
         </div>
 

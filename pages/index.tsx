@@ -36,11 +36,10 @@ export default function Home() {
             href="https://nextjs.org" >
           </a>
         </h1>
-        <p className="leading-normal text-6xl text-center font-italic 
-        text-">
-         All Products 
 
-        </p>
+        <span className="decoration-clone h-11 w-60 bg-gradient-to-b from-blue-400 to-green-500 text-white text-center font-bold text-4xl ...">
+  All Products 
+</span>
 
         <div className="mt-10 flex flex-wrap flex-col sm:flex-row w-full justify-center items-center text-blue-400">
           {products.map((p) => (
