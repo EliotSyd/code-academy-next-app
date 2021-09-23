@@ -14,19 +14,40 @@ export default function Contact() {
 
         />
       </Head>
-      <main className="py-20 flex flex-col flex-1 justify-center items-center">
+      <main className="decoration-clone h-50 w-100 bg-gradient-to-b from-blue-100 to-blue-600 py-20 flex flex-col flex-1 justify-center items-center">
         <h1 className="m-10 leading-snug text-6xl text-center">
 
           <a className="leading-normal text-6xl font-italic align-content-centre align-text-top">
             Contact
           </a>
         </h1>
-<div className="py-20 flex flex-col flex-1 justify-center items-center">
+ <a className="py-20 flex flex-col flex-1 justify-center items-center">
   <h2 className="m-10 leading-snug text-2xl text-center">
-Full Name
+Enter Full Name here 
   </h2>
 
-</div>
+  </a>
+
+  <a className="py-20 flex flex-col flex-1 justify-center items-center">
+  <h2 className="m-10 leading-snug text-2xl text-center">
+Enter Email here 
+  </h2>
+
+  </a>
+
+  <a className="py-20 flex flex-col flex-1 justify-center items-center">
+  <h2 className="m-10 leading-snug text-2xl text-center">
+Enter message here
+  </h2>
+
+  </a>
+
+  <a className=" text-center decoration-clone h-5 w-50 bg-blue-400 py-20 flex flex-col flex-1 justify-center items-center">
+  <h2 className="m-10 leading-snug text-2xl text-center">
+Submit
+  </h2>
+
+  </a>
       </main>
     </div>
      
