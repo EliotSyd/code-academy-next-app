@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar"
 
 
 export default function Contact() {
@@ -42,10 +42,8 @@ export default function Contact() {
         </a>
       </div>
     </form>
-    <p className="text-center text-gray-500 text-xs">
-      &copy;2020 Acme Corp. All rights reserved.
-     
-
+    <p className="text-center text-gray-500 text-2xl">
+      Contact form
     </p>
   </div>
   )
